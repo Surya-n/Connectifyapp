@@ -1,0 +1,128 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  
+}
+.name {
+  font-size: xx-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.dashsidebar {
+  width: 200px;
+  background-color: pink;
+  width: 40vh;
+  padding: 20px;
+  position: sticky;
+  position: fixed; /* Fix the sidebar to the left */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden; /* Prevent scrolling within the sidebar */
+  height: 100vh; /* Ensure the sidebar takes the full height of the viewport */
+  margin-right: 90vh;
+}
+.dashsidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashsidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dashsidebar li:hover {
+  background-color: rgb(250, 149, 166); /* Slight hover effect */
+}
+
+.dashsidebar li.active {
+  background-color: rgb(
+    250,
+    149,
+    166
+  ); /* Darker background for the active page */
+  font-weight: bold;
+  color: #fff; /* Ensure the text color is white for active page */
+}
+
+/* .logout-button {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  } */
+.search-modal {
+  position: relative;
+  top: 0;
+  right: 0;
+
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+
+  align-items: center;
+  z-index: 1000; /* Make sure the modal appears above other content */
+}
+
+.search-modal-content {
+  background-color: white;
+  width: 400px;
+  height: 90%;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.feed{
+  margin-left: 300px;
+  width: 120vh;
+  padding: 20px;
+  border-right: 1px solid #ccc
+}
+.requestbar {
+  margin-left: 80px;
+  width: 40vh;
+  padding: 20px;
+}
+.xplore{
+  color: rgb(250, 149, 166);
+}

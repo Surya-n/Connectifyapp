@@ -63,13 +63,8 @@ body {
   background-color: rgb(250, 149, 166);
 }
 
-/* Dashboard styles */
-.dashboard-container {
-  text-align: center;
-  margin-top: 50px;
-}
 
-.logout-button {
+/* .logout-button {
   padding: 10px;
   font-size: 16px;
   background-color: #f44336;
@@ -81,7 +76,7 @@ body {
 
 .logout-button:hover {
   background-color: #e53935;
-}
+} */
 .divider {
   display: flex;
   align-items: center;
