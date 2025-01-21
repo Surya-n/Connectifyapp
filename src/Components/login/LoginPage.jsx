@@ -1,14 +1,20 @@
 import React, { useState } from "react";
-import "./App.css";
-
-const LoginPage = ({ onLogin }) => {
+import "../../App.css";
+import { supabase } from "../../supabase";
+const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (username && password) {
-      onLogin(username, password);
+      try {
+        const { data, error } = await supabase.auth.signUp({
+          email: username,
+          password,
+        });
+        console.log(data, error);
+      } catch (error) {}
     } else {
       alert("Please enter both username and password");
     }
